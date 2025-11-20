@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            width: 100%;
+            height: 400px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+
+            /* horizontal movement */
+            justify-content: flex-start;
+
+            /* vertical movement */
+            align-items: flex-start;
+
+            flex-wrap: wrap;
+        }
+
+        .box{
+            width: 200px;
+            height: 100px;
+        }
+
+        .red{ background-color: red; }
+        .green{ background-color: green; }
+        .blue{ background-color: blue; }
+
+        .btn{
+            background-color: blueviolet;
+            padding: 5px 10px;
+            color: white;
+        }
+
+        .btn:hover{
+            background-color: purple;
+            cursor: pointer;
+        }
+
+        .whatsapp-icon{
+            position: fixed;
+            right:10px;
+            bottom:10px;
+        } 
+
+        .navbar{
+            position: sticky;
+            top: 5px;
+            background-color: aqua;
+        }
+
+        /* Duplicate .box removed — keeping only one */
+    </style>
+</head>
+<body>
+   <div class="box" style="position:absolute; top:50px; left:1200px; background-color:yellow;">
+        I am Absolute
+   </div>
+
+   <div class="navbar">
+        <div>logo</div>
+        <div>home</div>
+        <div>contact</div>
+   </div> 
+
+    <h1>display model -- flex</h1>
+
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+
+    <button class="btn">click me</button>
+
+    <div class="whatsapp-icon">
+        <img src="./md_5b321c98efaa6.jpg" alt="" width="50" height="50">
+    </div>
+</body>
+</html>
